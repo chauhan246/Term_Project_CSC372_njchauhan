@@ -2,6 +2,11 @@
 
 This full-stack application lets the user view, buy, and manage fragrance products.
 
+Install all packages and libraries:
+```sh
+npm install
+```
+
 Start the Application:
 ```sh
 npm run start

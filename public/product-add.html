@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Edit Product page - Admin</title>
+
+    <link rel="stylesheet" href="styles/admin.css">
+    <script src="/script.js" defer></script>
+
+    <h1 id="myHeader">Luxury Fragrance</h1>
+
+</head>
+
+<div class="admin_logo">Admin Dashboard</div>
+<nav class="navbar">
+    <a href="admin-upload.html">Bulk Upload page</a>
+    <a href="admin-products.html">Product Listing page</a>
+    <a href="#">Sales Reports</a>
+    <a href="#">View Orders</a>
+    <a href="home.html">User Home</a>
+
+</nav>
+
+<body>
+
+    <main>
+        <h2>Add Product</h2>
+        <form id="add-product-form">
+
+            <input type="hidden" name="product_id" value="1">
+
+            <div class="form-group">
+                <label for="prod-name-add">Name:</label>
+                <input type="text" id="prod-name-add" name="prod-name-add" required>
+            </div>
+
+            <div class="form-group">
+                <label for="prod-image-add">Image Name:</label>
+                <input type="text" id="prod-image-add" name="prod-image-add" required>
+            </div>
+
+            <div class="form-group textarea-group">
+                <label for="prod-desc-add">Description:</label>
+                <textarea id="prod-desc-add" name="prod-desc-add" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="prod-size-add">Size:</label>
+                <input type="text" id="prod-size-add" name="prod-size-add" required>
+            </div>
+
+            <div class="form-group">
+                <label for="prod-category-add">Category name:</label>
+                <select id="prod-category-add" name="prod-category-add" required>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="prod-price-add">Price:</label>
+                <input type="number" id="prod-price-add" name="prod-price-add" step="0.01" required>
+            </div>
+
+            <button type="submit" id="add-product-btn">Add Product</button>
+        </form>
+    </main>
+
+</body>
+
+</html>

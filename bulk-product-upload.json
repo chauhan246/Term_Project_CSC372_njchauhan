@@ -1,0 +1,28 @@
+{
+    "products": [
+        {
+            "prod_name": "Black Widow 2000",
+            "description": "Scent of Exotic Spices from the deep parts of the world",
+            "image_url": "prod9",
+            "prod_price": 70.52,
+            "prod_size": "2.23 oz",
+            "category_id": 1
+        },
+        {
+            "prod_name": "Blueberry Moisture",
+            "description": "Scent of Blueberry and a feeling of natural farm land",
+            "image_url": "prod10",
+            "prod_price": 45.52,
+            "prod_size": "1.7 oz",
+            "category_id": 2
+        },
+        {
+            "prod_name": "Platinum Chocolate Cake",
+            "description": "Scent of Chocolate Cake with a long lasting feeling of joy",
+            "image_url": "prod11",
+            "prod_price": 99.99,
+            "prod_size": "5.7 oz",
+            "category_id": 3
+        }
+    ]
+}

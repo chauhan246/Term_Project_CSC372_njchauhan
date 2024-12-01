@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+
+.admin_logo {
+    font-size: 30px;
+    font-weight: 550;
+    color: rgb(67, 2, 2);
+    text-align: center;
+    flex: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-top: 50px;
+    overflow: hidden;
+    font-size: 20px;
+    padding-left: 50px;
+    transition: background-color 0.3s;
+}
+
+
+.navbar a {
+    color: rgb(92, 41, 41);
+    padding: 15px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #e6dbab;
+}
+
+main {
+    padding: 20px;
+}
+
+.prod_list {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.prod_list,
+th,
+td {
+    border: 1px solid #878181;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+button {
+    padding: 5px 10px;
+    margin: 5px;
+    color: #060606;
+    background-color: #f4f3ef;
+}
+
+
+.table_rows {
+    font-size: 20px;
+    color: rgb(71, 23, 23);
+}
+
+td img {
+    width: 60px;
+    height: 60px;
+}
+
+/* search button */
+form.search {
+    float: right;
+    padding-right: 30px;
+}
+
+form.search input[type=text] {
+    padding: 10px;
+    font-size: 13px;
+    border: 1px solid grey;
+    width: 250px;
+    background: #f1f1f1;
+    margin: auto;
+}
+
+form.search button {
+    width: 50px;
+    padding: 10px;
+    background-color: #e6e0c4;
+    color: white;
+    font-size: 13px;
+    border: 1px solid grey;
+    margin-left: -5px;
+}
+
+form.search button:hover {
+    background-color: #bdb79c;
+}
+
+.container i {
+    font-size: 20px;
+    display: block;
+}
+
+h2 {
+
+    font-size: 25px;
+    color: rgb(71, 23, 23);
+
+}
+
+h3 {
+    font-size: 19px;
+    color: rgb(71, 23, 23);
+
+}
+
+.file_example {
+    border: 2px solid #929090;
+    padding: 11px;
+    margin: 11px 0;
+}
+
+.item_list {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Add Product */
+.form-group {
+    margin-bottom: 1em;
+}
+
+input[type="text"],
+textarea {
+    width: 25%;
+    /* Adjust width as needed */
+    padding: 0.5em;
+    /* Adjust padding as needed */
+}
+
+button:hover {
+    background-color: #a87727;
+}
+
+.textarea-group {
+    display: flex;
+    align-items: center;
+}
+
+.textarea-group label {
+    margin-right: 1em;
+}

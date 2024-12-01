@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+  Name: Nehabahen chauhan
+  Date: sept-30-2024
+  CSC 371-01
+
+  so in sencond milestone project i have created two html and two css files. 
+  details.html, detail.css, cart.html, and cart.css. 
+
+  for for go to details.html page you can click on first image "Luxury fragrance product 1" and 
+  it will take you to details.html page you find product detail. details page includes
+  price, size, description, add button and i have added two extra features "free gift with purchase"
+  and "Free shipping to 27406". 
+  one you hit the add button it will take you to cart page. Cart page includes order summary. 
+  cart page also includes items with quanties and price, and size of the product. it also includes
+  update and remove button. you can add item quantities just adding number or by increment and 
+  decrement buttons. at the end there is summary of order like tax and shipping value and total 
+  everything with tax and shipping. 
+ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>home_page</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/details.css">
+    <script src="/script.js" defer></script>
+    <!-- logo and signin button -->
+    <h1 id="myHeader">Luxury Fragrance</h1>
+
+    <div class="icons">
+        <div class="container">
+            <i class='fas fa-truck'></i>
+            <div class="text">Track Order</div>
+        </div>
+        <div class="container">
+            <i class="fas fa-heart"></i>
+            <div class="text">Wishlist</div>
+
+        </div>
+        <div class="container">
+            <i class="fas fa-user-alt"></i>
+            <div class="text">Account</div>
+            <div class="dropdown-account-options">
+                <a href="home.html">User</a>
+                <a href="admin-products.html">Admin</a>
+            </div>
+        </div>
+        <div class="container">
+            <i class="fas fa-shopping-cart"></i>
+            <a href="cart.html">
+                <div class="text">Cart</div>
+            </a>
+        </div>
+    </div>
+</head>
+
+<nav class="navbar">
+    <a href="home.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="#">Gifts</a>
+    <a href="#">About</a>
+    <form class="search">
+        <input type="text" placeholder="Search.." name="search2">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+
+</nav>
+
+<body>
+
+    <div class="box">
+        <div class="prod-details">
+            <div class="prod-image">
+                <img id="prod-image" src="" alt="Product Image">
+            </div>
+            <div class="prod-info">
+                <h2 id="prod-name"></h2>
+                <p class="prod-info-item" id="prod-category"></p>
+                <p class="desc" id="prod-description"></p>
+                <p class="prod-info-item" id="prod-size"></p>
+                <span class="price" id="prod-price"></span>
+                <a href="cart.html" class="cart-button" id="add-product-to-cart">Add</a>
+                <a href="#" class="free-gift">Free gift with purchase</a>
+                <p class="prod-info-item">Free Shipping to <span class="underline">27406</span></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="shopping">
+            <h3>SHOPPING</h3>
+            <a href="#">Women's</a>
+            <a href="#">Men's</a>
+            <a href="#">Unisex</a>
+            <a href="#">Gifts</a>
+        </div>
+
+        <div class="terms">
+            <h3>OUR POLICIES</h3>
+            <a href="#">Trems & Condition</a>
+            <a href="#">Return Policy</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">FAQs</a>
+        </div>
+
+        <div class="service">
+            <h3>CUSTOMER SERVICE</h3>
+            <a href="#">Order History</a>
+            <a href="#">Track Order</a>
+            <a href="#">My Account</a>
+            <a href="#">Store Credit</a>
+        </div>
+
+        <div class="social">
+            <h3>FIND US ON SOCIAL NETWORK</h3>
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-youtube"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+
+    </div>
+</body>
+
+</html>

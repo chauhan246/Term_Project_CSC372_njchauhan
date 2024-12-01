@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title> Product Listing page - Admin</title>
+
+    <link rel="stylesheet" href="styles/admin.css">
+    <script src="/script.js" defer></script>
+
+    <h1 id="myHeader">Luxury Fragrance</h1>
+
+</head>
+<div class="admin_logo">Admin Dashboard</div>
+<nav class="navbar">
+    <a href="admin-upload.html">Bulk Upload page</a>
+    <a href="admin-products.html">Product Listing page</a>
+    <a href="#">Sales Reports</a>
+    <a href="#">View Orders</a>
+    <a href="home.html">User Home</a>
+
+</nav>
+
+
+<body>
+
+    <main>
+        <h2>List of Products</h2>
+        <form class="search">
+            <input type="text" placeholder="Search.." name="search2">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <a href="product-add.html">
+            <button>Add New Product to list</button>
+        </a>
+        <table class="prod_list">
+            <thead>
+                <tr class="table_rows">
+                    <th>Product ID</th>
+                    <th>Name</th>
+                    <th>Image</th>
+                    <th>Description</th>
+                    <th>Size</th>
+                    <th>Category name</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody class="item_list">
+            </tbody>
+        </table>
+    </main>
+
+
+</body>
+
+</html>

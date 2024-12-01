@@ -1,0 +1,82 @@
+.box {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.prod-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+
+.prod-image {
+    flex: 1 1 200px;
+}
+
+.prod-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    margin-left: 200px;
+    padding-top: 40px;
+}
+
+.prod-info {
+    flex: 1 1 300px;
+    font-size: 18px;
+    padding-top: 40px;
+}
+
+.free-gift {
+    display: block;
+    margin-top: 15px;
+    font-size: 15px;
+    color: rgb(182, 56, 224);
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.prod-info-item {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.label {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.desc {
+    margin: 10px 0;
+    line-height: 1.4;
+    font-size: 18px;
+}
+
+.price {
+    font-size: 22px;
+    color: solid black;
+    margin-top: 10px;
+}
+
+.cart-button {
+    display: inline-block;
+    border: 1px solid rgb(31, 31, 31);
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 18px;
+    background-color: #dbd4bc;
+    color: #9e625c;
+}
+
+.cart-button:hover {
+    background-color: #f1ead1;
+}
+
+.underline {
+    text-decoration: underline;
+}

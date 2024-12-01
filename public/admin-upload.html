@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<!-- 
+Name: Nehabahen Chauhan
+Date: 10.16.2024
+CSC 372-01
+  This comments for admin page. so there is three html page related to admin 
+  1. admin-product.html 2. admin-upload.html and 3. product-edit.html
+  admin-product includes navbar and list of products and actions like delete edit and archive.
+  upload page also include navbar and where you have choose your file and upload it 
+  with given format.
+  product-edit page edit product. in admin-product in action once you hit the the 
+  edit it will take you to the produt-edit.html page. the id will be hide because can change the 
+  produt id. this page also includes navabar. 
+  there is also css file for admin related files, admin.css
+ -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulk upload page - Admin</title>
+
+    <link rel="stylesheet" href="styles/admin.css">
+    <script src="/script.js" defer></script>
+
+    <h1 id="myHeader">Luxury Fragrance</h1>
+</head>
+
+<div class="admin_logo">Admin Dashboard</div>
+<nav class="navbar">
+    <a href="admin-upload.html">Bulk Upload page</a>
+    <a href="admin-products.html">Product Listing page</a>
+    <a href="#">Sales Reports</a>
+    <a href="#">View Orders</a>
+    <a href="home.html">User Home</a>
+
+</nav>
+
+<body>
+
+
+    <main>
+        <h2>Import Products in Bulk</h2>
+        <form enctype="multipart/form-data">
+            <label for="file-upload">Select file (JSON, CSV, TXT format):</label>
+            <input type="file" id="file-upload" name="file" accept=".json" required>
+            <button type="submit">Upload</button>
+        </form>
+        <section class="file_sec">
+            <h3>File Format Requirements</h3>
+            <p>Please upload your data in one of the following formats:</p>
+            <ul>
+                <li>JSON (.json)</li>
+                <li>CSV (.csv)</li>
+                <li>TXT (.txt)</li>
+            </ul>
+            <h3>JSON Format example:</h3>
+            <pre class="file_example">{
+  "products": [
+    {
+      "prod_id": "1",
+      "prod_name": "Luxury fragrance product 1",
+      "prod_image": "path/to/image.jpg",
+      "prod_desc": "product 1 has a floral like scent.",
+      "prod_category": "male",
+      "prod_price": 49.00
+    }
+  ]
+}
+
+</pre>
+
+            <h3> CSV Format example:</h3>
+            <pre class="file_example">
+ prod_id,prod_name,prod_image,prod_desc,prod_category,prod_price
+ "1","Luxury fragrance product 1","path/to/image.jpg","product 1 has a floral like scent.","male",49.00
+</pre>
+
+
+            <h3>TXT Format example:</h3>
+            <pre class="file_example">
+1|Luxury fragrance product 1| path/to/image.jpg | product 1 has a floral like scent.| male | 49.00
+</pre>
+
+        </section>
+    </main>
+
+
+</body>
+
+</html>
